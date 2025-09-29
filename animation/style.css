@@ -1,0 +1,51 @@
+*{
+margin:0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    background-color: blue;
+    display:flex;
+    justify-content: center;
+    height: 1800px;
+    /* align-items: center; */
+    padding-top:20px;
+    
+}
+
+.container{
+    
+  padding: 5px;
+  /* jab position absolute kr dene per flexbox kam nhi krta hn  */
+  /* position:sticky;
+  top:20px; */
+  background-color: black;
+  width:300px; 
+  height:50px;
+  border:2px solid rgb(103, 164, 28);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+p{ 
+    
+    color: aliceblue;
+    font-size: 30px;
+    margin-left:100%;
+    white-space: nowrap;
+    animation-name:text;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes text{
+    from{
+     margin-left:100%;
+    }
+    to{
+     margin-left:-100%;
+    }
+}
